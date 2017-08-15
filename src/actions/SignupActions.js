@@ -15,7 +15,7 @@ export const signupButtonPress = ({email, password, password_confirmation, code}
   return (dispatch) => {
     dispatch({type:RESET_SIGNUP_FORM})
     debugger
-    fetch(`https://myDiary-api.herokuapp.com/api/v1/user`, {
+    fetch(`https://journal-api.herokuapp.com/api/v1/user`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
