@@ -23,10 +23,10 @@ export const signupButtonPress = ({email, password, password_confirmation, code}
       },
       body: JSON.stringify({
         'user':{
-          'email': 'venkatesh@gmail.com',
-          'password': '123456789',
-          'password_confirmation':'123456789',
-          'code': 'C13367945D5D4C91047B3B50234AA7AB'
+          'email': email,
+          'password': password,
+          'password_confirmation':password_confirmation,
+          'code': code
         }
       })
     }).then((response)=>
